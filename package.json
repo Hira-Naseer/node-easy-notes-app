@@ -1,0 +1,25 @@
+{
+  "name": "easy-notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MangoDB",
+    "Mongose",
+    "Notes"
+  ],
+  "author": "callicoder",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "md5": "^2.3.0",
+    "mongoose": "^6.3.4"
+  }
+}

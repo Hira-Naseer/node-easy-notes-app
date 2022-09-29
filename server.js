@@ -1,0 +1,22 @@
+// import noteRoutes from './app/routes/note.routes.js';
+const express = require('express');
+const cors = require('cors');
+const app = express();
+var corsOptions = {
+    origin: "http://localhost:8081"
+
+};
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.get("/", (req, res) => {
+    res.json({ message: "Welcome to Easy notes application." });
+  });
+
+require("./app/routes/note.routes.js")(app);
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, ()=> {console.log(`Listening on port ${PORT}...`)
+});  
+
